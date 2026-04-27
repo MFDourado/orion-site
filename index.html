@@ -13,33 +13,31 @@ body{font-family:'Sora',sans-serif;background:var(--white);color:var(--text);ove
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
 .nav-logo{font-size:22px;font-weight:800;color:var(--blue);letter-spacing:-1px;font-family:'DM Mono',monospace;}
 .nav-logo span{color:var(--text);}
-.nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
 .nav-links a{font-size:14px;font-weight:500;color:var(--text-muted);text-decoration:none;transition:color .15s;}
 .nav-links a:hover{color:var(--blue);}
 .nav-cta{padding:8px 22px;background:var(--blue);color:var(--white)!important;border-radius:8px;font-weight:600!important;}
-.nav-cta:hover{opacity:.9;}
+.nav-wa{color:#25D366!important;font-weight:600!important;}
 .hero{min-height:100vh;padding:120px 2rem 80px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(160deg,#EBF2FF 0%,#F7FAFF 40%,#FFFFFF 100%);position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(27,108,242,.08) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none;}
 .hero-inner{max-width:780px;position:relative;z-index:1;}
-.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;background:var(--blue-light);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:600;color:var(--blue);margin-bottom:28px;animation:fadeUp .6s ease both;}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;background:var(--blue-light);border:1px solid var(--border);border-radius:20px;font-size:13px;font-weight:600;color:var(--blue);margin-bottom:28px;}
 .hero-tag::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--blue);animation:pulse 2s infinite;}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(1.3);}}
-h1{font-size:clamp(36px,6vw,64px);font-weight:800;line-height:1.1;letter-spacing:-1.5px;color:var(--text);margin-bottom:24px;animation:fadeUp .6s .1s ease both;}
+h1{font-size:clamp(36px,6vw,64px);font-weight:800;line-height:1.1;letter-spacing:-1.5px;color:var(--text);margin-bottom:24px;}
 h1 span{color:var(--blue);}
-.hero-sub{font-size:clamp(16px,2vw,20px);color:var(--text-muted);line-height:1.6;max-width:560px;margin:0 auto 40px;font-weight:400;animation:fadeUp .6s .2s ease both;}
-.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;animation:fadeUp .6s .3s ease both;}
+.hero-sub{font-size:clamp(16px,2vw,20px);color:var(--text-muted);line-height:1.6;max-width:560px;margin:0 auto 40px;font-weight:400;}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
 .btn{padding:14px 32px;border-radius:10px;font-size:15px;font-weight:600;font-family:'Sora',sans-serif;cursor:pointer;border:none;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:8px;}
 .btn-primary{background:var(--blue);color:var(--white);box-shadow:0 4px 20px rgba(27,108,242,.3);}
-.btn-primary:hover{background:var(--blue-dark);transform:translateY(-1px);box-shadow:0 6px 24px rgba(27,108,242,.4);}
+.btn-primary:hover{background:var(--blue-dark);transform:translateY(-1px);}
 .btn-secondary{background:var(--white);color:var(--blue);border:1.5px solid var(--border);}
 .btn-secondary:hover{border-color:var(--blue);background:var(--blue-light);}
-.hero-phones{margin-top:64px;animation:fadeUp .6s .4s ease both;display:flex;justify-content:center;gap:20px;align-items:flex-end;}
+.hero-phones{margin-top:64px;display:flex;justify-content:center;gap:20px;align-items:flex-end;}
 .phone-mock{width:200px;height:360px;background:var(--white);border-radius:28px;border:8px solid var(--text);box-shadow:0 24px 60px rgba(10,22,40,.15);overflow:hidden;flex-shrink:0;}
 .phone-mock.small{width:160px;height:290px;margin-bottom:20px;opacity:.7;border-color:#3A4A60;}
 .phone-screen{width:100%;height:100%;background:linear-gradient(160deg,#1B6CF2 0%,#0D3E9E 100%);padding:16px 12px;display:flex;flex-direction:column;gap:8px;}
 .pb{height:8px;border-radius:4px;background:rgba(255,255,255,.3);}
-.pb.w80{width:80%;}.pb.w60{width:60%;background:rgba(255,255,255,.5);}.pb.w40{width:40%;}
-.pb.gold{background:#F5C842;width:50%;height:6px;}
+.pb.w80{width:80%;}.pb.w60{width:60%;background:rgba(255,255,255,.5);}.pb.w40{width:40%;}.pb.gold{background:#F5C842;width:50%;height:6px;}
 .pcard{background:rgba(255,255,255,.15);border-radius:8px;padding:8px;display:flex;flex-direction:column;gap:4px;margin-top:4px;}
 .pdot{width:6px;height:6px;border-radius:50%;background:#4ADE80;display:inline-block;}
 .section{padding:100px 2rem;max-width:1100px;margin:0 auto;}
@@ -73,7 +71,7 @@ h1 span{color:var(--blue);}
 .pricing-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:32px;}
 .pricing-features li{font-size:14px;display:flex;align-items:center;gap:8px;}
 .pricing-card.featured .pricing-features li{color:rgba(255,255,255,.9);}
-.pricing-features li::before{content:'check';font-family:'Material Icons';width:20px;height:20px;border-radius:50%;background:var(--blue-light);color:var(--blue);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;content:'✓';}
+.pricing-features li::before{content:'✓';width:20px;height:20px;border-radius:50%;background:var(--blue-light);color:var(--blue);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .pricing-card.featured .pricing-features li::before{background:rgba(255,255,255,.2);color:var(--white);}
 .pricing-btn{width:100%;padding:12px;border-radius:10px;font-size:14px;font-weight:600;font-family:'Sora',sans-serif;cursor:pointer;border:1.5px solid var(--border);background:none;color:var(--blue);transition:all .2s;}
 .pricing-btn:hover{background:var(--blue-light);border-color:var(--blue);}
@@ -97,7 +95,7 @@ h1 span{color:var(--blue);}
 .cta-title{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-1px;margin-bottom:16px;}
 .cta-sub{font-size:17px;color:var(--text-muted);margin-bottom:40px;line-height:1.6;}
 .cta-form{display:flex;gap:10px;max-width:460px;margin:0 auto;flex-wrap:wrap;}
-.cta-input{flex:1;min-width:200px;height:48px;border:1.5px solid var(--border);border-radius:10px;padding:0 16px;font-size:14px;font-family:'Sora',sans-serif;outline:none;color:var(--text);background:var(--white);transition:border-color .15s;}
+.cta-input{flex:1;min-width:200px;height:48px;border:1.5px solid var(--border);border-radius:10px;padding:0 16px;font-size:14px;font-family:'Sora',sans-serif;outline:none;color:var(--text);background:var(--white);}
 .cta-input:focus{border-color:var(--blue);}
 .cta-input::placeholder{color:var(--text-muted);}
 .cta-btn{height:48px;padding:0 24px;background:var(--blue);color:var(--white);border:none;border-radius:10px;font-size:14px;font-weight:600;font-family:'Sora',sans-serif;cursor:pointer;transition:all .2s;}
@@ -105,14 +103,13 @@ h1 span{color:var(--blue);}
 .footer-wrap{padding:32px 2rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;max-width:1100px;margin:0 auto;}
 .footer-logo{font-size:16px;font-weight:800;color:var(--blue);font-family:'DM Mono',monospace;}
 .footer-text{font-size:13px;color:var(--text-muted);}
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:999;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:12px 20px;border-radius:50px;font-size:14px;font-weight:600;font-family:'Sora',sans-serif;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .2s;}
+.whatsapp-float:hover{background:#1da851;transform:translateY(-2px);}
+.whatsapp-float svg{width:22px;height:22px;flex-shrink:0;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 .fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
 .fade-up.visible{opacity:1;transform:translateY(0);}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @media(max-width:768px){.nav-links{display:none;}.about-inner{grid-template-columns:1fr;}.hero-phones{display:none;}}
-
-.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:999;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:12px 20px;border-radius:50px;font-size:14px;font-weight:600;font-family:'Sora',sans-serif;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:all .2s;}
-.whatsapp-float:hover{background:#1da851;transform:translateY(-2px);box-shadow:0 6px 28px rgba(37,211,102,.5);}
-.whatsapp-float svg{width:22px;height:22px;flex-shrink:0;}
 </style>
 </head>
 <body>
@@ -124,12 +121,8 @@ h1 span{color:var(--blue);}
     <li><a href="#como-funciona">Como funciona</a></li>
     <li><a href="#planos">Planos</a></li>
     <li><a href="#sobre">Sobre</a></li>
+    <li><a href="https://wa.me/5521980660283?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Orion." target="_blank" class="nav-wa">WhatsApp</a></li>
     <li><a href="#contato" class="nav-cta">Fale conosco</a></li>
-    <li><a href="https://wa.me/5521980660283?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Orion." target="_blank" style="color:#25D366;font-weight:600;">WhatsApp</a></li>
-    <li><a href="https://wa.me/5521980660283?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Orion!" target="_blank" style="display:flex;align-items:center;gap:6px;padding:8px 16px;background:#25D366;color:#fff;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.836L.057 23.25a.75.75 0 00.916.99l5.596-1.424A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.706 9.706 0 01-4.953-1.355l-.355-.211-3.676.935.977-3.563-.232-.366A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-      Especialista
-    </a></li>
   </ul>
 </nav>
 
@@ -143,23 +136,8 @@ h1 span{color:var(--blue);}
       <a href="#planos" class="btn btn-secondary">Ver planos</a>
     </div>
     <div class="hero-phones">
-      <div class="phone-mock small">
-        <div class="phone-screen">
-          <div class="pb w60"></div><div class="pb w40"></div>
-          <div class="pcard"><div class="pb w80"></div><div class="pb w60"></div><div class="pdot"></div></div>
-          <div class="pcard"><div class="pb w60"></div><div class="pb w40"></div></div>
-        </div>
-      </div>
-      <div class="phone-mock">
-        <div class="phone-screen">
-          <div style="color:rgba(255,255,255,.5);font-size:9px;font-family:'DM Mono',monospace;margin-bottom:8px">PIPELINE OPERACIONAL</div>
-          <div class="pb gold"></div>
-          <div class="pcard"><div class="pb w80"></div><div class="pb w60"></div><div style="display:flex;gap:4px;margin-top:4px"><div style="height:6px;width:6px;border-radius:50%;background:#4ADE80"></div><div class="pb" style="width:50%;height:6px"></div></div></div>
-          <div class="pcard"><div class="pb w60"></div><div class="pb w40"></div></div>
-          <div class="pcard"><div class="pb w80"></div><div style="display:flex;gap:4px;margin-top:4px"><div style="height:6px;width:6px;border-radius:50%;background:#F5C842"></div><div class="pb" style="width:40%;height:6px"></div></div></div>
-          <div style="margin-top:auto;padding-top:8px"><div style="height:24px;background:rgba(255,255,255,.2);border-radius:6px"></div></div>
-        </div>
-      </div>
+      <div class="phone-mock small"><div class="phone-screen"><div class="pb w60"></div><div class="pb w40"></div><div class="pcard"><div class="pb w80"></div><div class="pb w60"></div><div class="pdot"></div></div><div class="pcard"><div class="pb w60"></div><div class="pb w40"></div></div></div></div>
+      <div class="phone-mock"><div class="phone-screen"><div style="color:rgba(255,255,255,.5);font-size:9px;font-family:'DM Mono',monospace;margin-bottom:8px">PIPELINE OPERACIONAL</div><div class="pb gold"></div><div class="pcard"><div class="pb w80"></div><div class="pb w60"></div><div style="display:flex;gap:4px;margin-top:4px"><div style="height:6px;width:6px;border-radius:50%;background:#4ADE80"></div><div class="pb" style="width:50%;height:6px"></div></div></div><div class="pcard"><div class="pb w60"></div><div class="pb w40"></div></div><div class="pcard"><div class="pb w80"></div><div style="display:flex;gap:4px;margin-top:4px"><div style="height:6px;width:6px;border-radius:50%;background:#F5C842"></div><div class="pb" style="width:40%;height:6px"></div></div></div><div style="margin-top:auto;padding-top:8px"><div style="height:24px;background:rgba(255,255,255,.2);border-radius:6px"></div></div></div></div>
     </div>
   </div>
 </section>
@@ -201,14 +179,7 @@ h1 span{color:var(--blue);}
       <div class="pricing-plan">Básico</div>
       <div class="pricing-price">R$199<span>/mês</span></div>
       <div class="pricing-desc">Para empresas que estão começando a organizar os processos comerciais e operacionais.</div>
-      <ul class="pricing-features">
-        <li>Gestão de prospects</li>
-        <li>Pipeline de implantação</li>
-        <li>Agenda operacional</li>
-        <li>Notificações por e-mail</li>
-        <li>Suporte remoto incluso</li>
-        <li>Até 3 usuários</li>
-      </ul>
+      <ul class="pricing-features"><li>Gestão de prospects</li><li>Pipeline de implantação</li><li>Agenda operacional</li><li>Notificações por e-mail</li><li>Suporte remoto incluso</li><li>Até 3 usuários</li></ul>
       <button class="pricing-btn" onclick="document.getElementById('contato').scrollIntoView()">Começar agora</button>
     </div>
     <div class="pricing-card featured fade-up">
@@ -216,28 +187,14 @@ h1 span{color:var(--blue);}
       <div class="pricing-plan">Pro</div>
       <div class="pricing-price">R$399<span>/mês</span></div>
       <div class="pricing-desc">Para equipes que precisam de visibilidade total — do prospect ao cliente ativo.</div>
-      <ul class="pricing-features">
-        <li>Tudo do plano Básico</li>
-        <li>Módulo de vistorias</li>
-        <li>Dashboard com gráficos</li>
-        <li>Base de clientes</li>
-        <li>Log de alterações</li>
-        <li>Usuários ilimitados</li>
-      </ul>
+      <ul class="pricing-features"><li>Tudo do plano Básico</li><li>Módulo de vistorias</li><li>Dashboard com gráficos</li><li>Base de clientes</li><li>Log de alterações</li><li>Usuários ilimitados</li></ul>
       <button class="pricing-btn" onclick="document.getElementById('contato').scrollIntoView()">Começar agora</button>
     </div>
     <div class="pricing-card fade-up">
       <div class="pricing-plan">Enterprise</div>
       <div class="pricing-price">Sob<span> consulta</span></div>
       <div class="pricing-desc">Para empresas que precisam de customizações, integrações e fluxos específicos.</div>
-      <ul class="pricing-features">
-        <li>Tudo do plano Pro</li>
-        <li>Fluxo personalizado</li>
-        <li>Integração com ERPs</li>
-        <li>Campos customizados</li>
-        <li>SLA prioritário</li>
-        <li>Implantação dedicada</li>
-      </ul>
+      <ul class="pricing-features"><li>Tudo do plano Pro</li><li>Fluxo personalizado</li><li>Integração com ERPs</li><li>Campos customizados</li><li>SLA prioritário</li><li>Implantação dedicada</li></ul>
       <button class="pricing-btn" onclick="document.getElementById('contato').scrollIntoView()">Falar com especialista</button>
     </div>
   </div>
@@ -260,7 +217,7 @@ h1 span{color:var(--blue);}
     <div class="about-right">
       <div class="about-item"><div class="about-item-icon">📱</div><div><div class="about-item-title">Acesse do celular, sem app</div><div class="about-item-text">Qualquer navegador, qualquer dispositivo. Basta ter o link — sua equipe acessa de onde estiver.</div></div></div>
       <div class="about-item"><div class="about-item-icon">⚡</div><div><div class="about-item-title">Tempo real para toda a equipe</div><div class="about-item-text">O que um usuário altera, todos veem instantaneamente. Sem versões diferentes, sem informação perdida.</div></div></div>
-      <div class="about-item"><div class="about-item-icon">🔒</div><div><div class="about-item-title">Dados no Google Sheets</div><div class="about-item-text">Seus dados ficam na sua conta Google — você tem acesso total e nunca fica refém de nenhum fornecedor.</div></div></div>
+      <div class="about-item"><div class="about-item-icon">🔒</div><div><div class="about-item-title">Dados na sua conta Google</div><div class="about-item-text">Seus dados ficam na sua conta Google — você tem acesso total e nunca fica refém de nenhum fornecedor.</div></div></div>
       <div class="about-item"><div class="about-item-icon">🛠️</div><div><div class="about-item-title">Suporte via AnyDesk</div><div class="about-item-text">Atendimento remoto direto na sua tela. Sem deslocamento, sem espera, sem custo adicional.</div></div></div>
     </div>
   </div>
@@ -277,9 +234,7 @@ h1 span{color:var(--blue);}
       <input type="text" name="empresa" class="cta-input" placeholder="Sua empresa" style="flex-basis:100%">
       <button type="submit" class="cta-btn" id="cta-submit">Quero uma demo</button>
     </form>
-    <div id="cta-success" style="display:none;background:#EAF3DE;border:1px solid #3B6D11;border-radius:10px;padding:16px 24px;margin-top:16px;color:#3B6D11;font-weight:500;">
-      ✓ Mensagem enviada! Entraremos em contato em até 24 horas.
-    </div>
+    <div id="cta-success" style="display:none;background:#EAF3DE;border:1px solid #3B6D11;border-radius:10px;padding:16px 24px;margin-top:16px;color:#3B6D11;font-weight:500;">✓ Mensagem enviada! Entraremos em contato em até 24 horas.</div>
     <p style="font-size:12px;color:var(--text-muted);margin-top:16px">Respondemos em até 24 horas nos dias úteis.</p>
   </div>
 </section>
@@ -287,54 +242,30 @@ h1 span{color:var(--blue);}
 <footer>
   <div class="footer-wrap">
     <div class="footer-logo">orion.</div>
-    <div class="footer-text">© 2026 Orion — <a href="https://serviceorion.com.br" style="color:var(--blue);text-decoration:none">serviceorion.com.br</a> — Todos os direitos reservados.</div>
+    <div class="footer-text">© 2026 Orion — <a href="https://www.serviceorion.com.br" style="color:var(--blue);text-decoration:none">serviceorion.com.br</a> — Todos os direitos reservados.</div>
   </div>
 </footer>
 
-<script>
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
-},{threshold:0.1});
-document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
-
-async function enviarContato(){
-  const nome=document.getElementById('cta-nome').value.trim();
-  const email=document.getElementById('cta-email').value.trim();
-  if(!nome||!email){alert('Preencha seu nome e e-mail.');return;}
-  const btn=document.querySelector('.cta-btn');
-  btn.textContent='Enviando...';btn.disabled=true;
-  try{
-    const r=await fetch('https://formspree.io/f/SEU_ID_FORMSPREE',{
-      method:'POST',
-      headers:{'Content-Type':'application/json','Accept':'application/json'},
-      body:JSON.stringify({nome,email,mensagem:'Solicitacao de demonstracao via site Orion'})
-    });
-    if(r.ok){
-      alert('Obrigado, '+nome+'! Entraremos em contato em breve.');
-      document.getElementById('cta-nome').value='';
-      document.getElementById('cta-email').value='';
-    } else { alert('Erro ao enviar. Tente pelo WhatsApp.'); }
-  }catch(e){ alert('Erro ao enviar. Tente pelo WhatsApp.'); }
-  btn.textContent='Quero uma demo';btn.disabled=false;
-}
-</script>
-
-<!-- WhatsApp FAB -->
-<a href="https://wa.me/5521980660283?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Orion!" target="_blank"
-   style="position:fixed;bottom:24px;right:24px;z-index:999;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s;"
-   onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.836L.057 23.25a.75.75 0 00.916.99l5.596-1.424A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.706 9.706 0 01-4.953-1.355l-.355-.211-3.676.935.977-3.563-.232-.366A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-</a>
-
-
-<a href="https://wa.me/5521980660283?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Orion." 
-   class="whatsapp-float" target="_blank" rel="noopener">
-  <svg viewBox="0 0 24 24" fill="currentColor">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.554 4.107 1.523 5.83L.044 23.956l6.292-1.648A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.368l-.359-.213-3.731.978.995-3.636-.234-.374A9.818 9.818 0 1112 21.818z"/>
-  </svg>
+<!-- WHATSAPP FLUTUANTE — apenas um -->
+<a href="https://wa.me/5521980660283?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Orion." class="whatsapp-float" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.554 4.107 1.523 5.83L.044 23.956l6.292-1.648A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.368l-.359-.213-3.731.978.995-3.636-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
   Fale com especialista
 </a>
 
+<script>
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+
+document.getElementById('cta-form').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=document.getElementById('cta-submit');
+  btn.textContent='Enviando...';btn.disabled=true;
+  try{
+    const res=await fetch('https://formspree.io/f/xpqkezao',{method:'POST',body:new FormData(this),headers:{'Accept':'application/json'}});
+    if(res.ok){document.getElementById('cta-form').style.display='none';document.getElementById('cta-success').style.display='block';}
+    else{btn.textContent='Erro — tente novamente';btn.disabled=false;}
+  }catch(e){btn.textContent='Erro — tente novamente';btn.disabled=false;}
+});
+</script>
 </body>
 </html>
